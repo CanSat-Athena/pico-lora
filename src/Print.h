@@ -20,16 +20,12 @@
 
 #include <inttypes.h>
 #include <stdio.h> // for size_t
-#include <string>
-
+#include <cstring>
 
 #define DEC 10
 #define HEX 16
 #define OCT 8
 #define BIN 2
-
-
-using std::string;
 
 class Print
 {
@@ -63,7 +59,6 @@ class Print
    //  size_t print(const char[]);
     size_t print(char);
     size_t print(const char*);
-    size_t print(string c);
     size_t print(unsigned char, int = DEC);
     size_t print(int, int = DEC);
     size_t print(unsigned int, int = DEC);

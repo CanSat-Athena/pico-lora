@@ -18,13 +18,10 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include <string>
 #include <math.h>
 
 #include "Print.h"
 
-using std::string;
 // Public Methods //////////////////////////////////////////////////////////////
 
 /* default implementation: may be overridden */
@@ -36,11 +33,6 @@ size_t Print::write(const uint8_t *buffer, size_t size)
     else break;
   }
   return n;
-}
-
-size_t Print::print(string str)
-{
-  return write(str.c_str(), str.size());
 }
 
 // size_t Print::print(const char str[])
