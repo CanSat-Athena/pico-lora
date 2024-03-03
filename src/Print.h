@@ -59,6 +59,7 @@ class Print
    //  size_t print(const char[]);
     size_t print(char);
     size_t print(const char*);
+    size_t print(const char* c, size_t size);
     size_t print(unsigned char, int = DEC);
     size_t print(int, int = DEC);
     size_t print(unsigned int, int = DEC);
